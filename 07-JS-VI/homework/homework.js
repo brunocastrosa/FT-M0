@@ -6,6 +6,10 @@ function mayuscula(nombre) {
   //Tu código:
   return nombre[0].toUpperCase() + nombre.slice(1)
 }
+// o se puede hacer asi:
+//var arr = nombre.split("")
+//arr[0] = arr[0].toUpperCase()
+//return arr.join("")
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
@@ -32,6 +36,11 @@ function sumarArray(numeros, cb) {
   }
   cb(suma)
 }
+// o se puede hacer asi:
+// var res = numeros.reduce(funcion(acc, el)){
+//return acc + el
+//})
+// cb(res)
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
@@ -41,6 +50,8 @@ function forEach(array, cb) {
     cb(array[i]);
   }
 }
+// array.forEach(cb)
+
 
 function map(array, cb) {
   // Crea un nuevo array
@@ -51,6 +62,9 @@ function map(array, cb) {
     return cb(e);
   });
   return nuevoArray
+  // o se puede hacer asi:
+  // var arr = array.map(cb)
+  // return arr
 }
 
 function filter(array) {
@@ -65,6 +79,10 @@ function filter(array) {
   }
   return nuevoArray;
 }
+// o se puede hacer asi:
+// var arr = array.filter(function(el){
+// return el[0] === "a"
+//}
 
 // No modificar nada debajo de esta línea
 // --------------------------------
