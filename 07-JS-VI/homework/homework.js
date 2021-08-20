@@ -83,6 +83,7 @@ function filter(array) {
 // var arr = array.filter(function(el){
 // return el[0] === "a"
 //}
+// return arr
 
 // No modificar nada debajo de esta línea
 // --------------------------------
